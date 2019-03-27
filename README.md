@@ -1,3 +1,4 @@
 # TeX Multilingual Unicode Template 
 
-[embed]https://github.com/artemii-yanushevskyi/TeX-Multilingual-Unicode-Template/blob/master/main.pdf[/embed]
+
+[embed]https://raw.githubusercontent.com/artemii-yanushevskyi/TeX-Multilingual-Unicode-Template/master/main.pdf[/embed]
