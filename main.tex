@@ -1,0 +1,57 @@
+%!TEX encoding = UTF-8 Unicode
+%!TEX TS-program = xelatex
+\documentclass{article}
+
+\usepackage{unixode}
+
+\usepackage{fontspec} % loaded by polyglossia, but included here for transparency 
+\usepackage{polyglossia}
+\usepackage{euler}
+\usepackage{amsmath,amssymb,amsthm,amsfonts}
+
+\newfontfamily\ukrainianfont[Script=Cyrillic]{Montserrat}
+\newfontfamily\englishfont{Montserrat}
+
+\setmainlanguage{english} 
+\setotherlanguage{ukrainian}
+
+\newfontfamily\semibold{Montserrat SemiBold}
+\newfontfamily\light{Montserrat Thin}
+
+\usepackage{minor}
+
+\makeatletter % undo the wrong changes made by mathspec
+\let\RequirePackage\original@RequirePackage
+\let\usepackage\RequirePackage
+\makeatother % to make package physics work, as it requires mathspec, which requires amsmath... i am confused... It just works this way
+\usepackage{physics}
+
+\usepackage{tikz}
+
+\usepackage{graphicx}
+
+
+
+% XeLaTeX can use any font installed in your system fonts folder
+% Linux Libertine in the next line can be replaced with any 
+% OpenType or TrueType font that supports the Cyrillic script.
+
+
+\author{Artemii Yanushevskyi}
+
+\begin{document}
+\abovedisplayskip=1.8em
+\abovedisplayshortskip=1.3em
+\belowdisplayskip=2em
+\belowdisplayshortskip=1.5em
+\fontdimen2\font=.37em
+
+
+\input{formulas/main.tex}
+
+
+\pagebreak
+
+\end{document}
+
+

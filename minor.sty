@@ -1,0 +1,50 @@
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=3em plus 1em minus 2em
+  \thm@postskip=\thm@preskip % or whatever, if you don't want them to be equal
+}
+\makeatother
+
+\theoremstyle{definition}
+\newtheorem{definition}{Означення}[section]
+\renewcommand{\thedefinition}{\arabic{definition}}
+\newtheorem{theorem}{Теорема}[section]
+\renewcommand{\thetheorem}{\arabic{theorem}}
+
+\usepackage{enumitem}
+\setlist[enumerate]{topsep=-0.4em, leftmargin=4em}
+
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\pr}{pr}
+
+\newcommand\K{\mathbb{K}}
+\newcommand\N{\mathbb{N}}
+\newcommand\C{\mathbb{C}}
+\newcommand\cL{\mathcal{L}}
+
+
+
+\newcommand{\ps}[2]{
+\left\langle #1, #2\right\rangle
+}
+\newcommand{\dmo}{
+^{-1}
+}
+\newcommand{\n}[1]{
+\norm{#1}
+}
+\newcommand{\df}[1]{
+\mqty{#1}
+}
+
+\usepackage{titlesec}
+\titlespacing*{\section}
+{0pt}{6em plus 1em minus .2em}{3em plus .2em minus .5em}
+\titlespacing*{\subsection}
+{0pt}{5em plus 1em minus .2em}{1.3em plus .2em minus .5em}
+\titleformat*{\section}{\fontsize{28}{34}\light}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1.5em}
+\renewcommand{\baselinestretch}{1.4}
+\setlength{\jot}{2em}
